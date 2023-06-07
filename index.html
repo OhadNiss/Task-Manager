@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+ 
+    <title>Task's Manager</title>
+</head>
+
+<body onload="newDateTime()"class="custom-background">
+
+    <h1>My Task Board</h1>
+    <br><br>
+
+
+    <form onsubmit="save()">
+        <label>Task Description</label>
+        <br>
+        <span class="missing" id="missing"></span>
+        <br>
+        <textarea id="descriptionBox"></textarea>
+        <br><br>
+
+        <label>Date and Time</label>
+        <br>
+        <span class="missing1" id="missing1"></span>
+        <br>
+        <input type="datetime-local" min="" name="" id="timeBox">
+        <br><br>
+
+        <button>Add</button>
+        <button type="reset">Clear</button>
+
+
+    </form>
+
+    <section dir="auto" id="sectionTasks">
+
+    </section>
+
+</body>
+
+</html>
